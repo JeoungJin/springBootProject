@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>타임리프 연습</h1>
+<p th:text="|<h1>타임리프연습</h1>|"></p>
+<p th:text="${score}">점수</p>
+<p th:text="${'<h1>A' +myname+ '</h1>'}">이름</p>
+<p th:text="|<h1>ㅁㅁㅁㅁㅁㅁㅁ${myname}</h1>|">text를 조합하기위해  수직바를 사용</p>
+<p th:utext="${'<h1>B' + mycar.model + '</h1>'}">마이카 utext는 tag해석 </p>
+<p th:text="${'<h1>C'+mycar.model+'</h1>'}">마이카 text는 태그 그대로 </p>
+<p th:text="${mycar.model}">마이카 getAttribute("mycar").getModel()</p>
+
+ 
+
+
+<div>
+  <h1>aaaaaa</h1>
+</div>
+</body>
+</html>
